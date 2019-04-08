@@ -1,3 +1,8 @@
+*.pdf
+*.doc
+*.docx
+*.zip
+
 *.vscode
 # Prerequisites
 *.d
