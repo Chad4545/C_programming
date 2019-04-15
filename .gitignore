@@ -2,7 +2,8 @@
 *.doc
 *.docx
 *.zip
-
+*.png
+*.ipynb_checkpoints
 *.vscode
 # Prerequisites
 *.d
