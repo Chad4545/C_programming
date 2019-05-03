@@ -20,7 +20,7 @@ int main(void) {
 		x_1 = -c / b;
 		printf("정답: %.2f\n", x_1);
 	}
-	//a != 인 경우
+	//a != 0 인 경우
 	else { // D==0 이면 중근을 같는다
 		if (D == 0) {
 			float x_1;

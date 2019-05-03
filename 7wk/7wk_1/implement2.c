@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-double f_to_c(double f); // ÇÔ¼ö ¿øÇü ¼±¾ğ
+double f_to_c(double f); // í•¨ìˆ˜ì›í˜•ì„ ì–¸
 
 int main(void) {
 	double f, c;
-	printf("È­¾¾ ¿Âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+	printf("È­ï¿½ï¿½ ï¿½Âµï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½: ");
 	scanf("%lf", &f);
 
 	c = f_to_c(f);
-	printf("¼·¾¾ ¿Âµµ: %.2f\n", c);
+	printf("ï¿½ï¿½ï¿½ï¿½ ï¿½Âµï¿½: %.2f\n", c);
 	return 0;
 }
-// ÀÌ¸§ÀÌ °°´õ¶óµµ, º°°³ÀÇ f,c  ´Ù
+// ì´ë¦„ì´ ê°™ë”ë¼ë„, ë³„ê°œì˜ f,c
 double f_to_c(double f)
 {	
 	double c;

@@ -9,15 +9,15 @@ int main(void)
 	char yes_or_no;
 	while (1){
 
-		printf("Ã¹ ¹øÂ° Á¡ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		printf("ì²« ë²ˆì§¸ ì ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 		scanf("%d %d", &a, &b);
-		printf("µÎ ¹øÂ° Á¡ÀÇ ÁÂÇ¥¸¦ ÀÔ·ÂÇÏ½Ã¿À: ");
+		printf("ë‘ ë²ˆì§¸ ì ì˜ ì¢Œí‘œë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 		scanf("%d %d", &c, &d);
 
 		distance = make_dist(a, b, c, d);
-		printf("µÎ Á¡  »çÀÌÀÇ °Å¸®´Â %f ÀÔ´Ï´Ù.", distance);
+		printf("ë‘ ì  ì‚¬ì´ì˜ ê±°ë¦¬ëŠ” %f ì…ë‹ˆë‹¤.", distance);
 
-		printf("´Ù½Ã ¼öÇàÇÏ½Ã°Ú½À´Ï±î?(y/n): ");
+		printf("ë‹¤ì‹œ ìˆ˜í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ?(y/n): ");
 		scanf(" %c", &yes_or_no);
 
 		if (yes_or_no == 'n')

@@ -15,8 +15,8 @@ int main(void) {
 		printf("연산을 선택하시요 : \n");
 
 		while((ch=getchar()) == '\n');
-		//getchar();
-		//printf("%c\n",ch);
+		//ch = getchar();
+		printf("%c\n",ch);
 		if (ch == 'Q')
 			break;
 
