@@ -10,7 +10,7 @@ static void score(double);
 
 void arithGame()
 {   
-    // take user_choice from user
+    // 유저에게 user_choice의 값을 할당받는다.
     while(1)
     {
         printf("1) 더하기 할래?\n");
@@ -18,12 +18,13 @@ void arithGame()
         printf("3) 곱하기 할래?\n");
         printf("메뉴를 선택하세요: ");
         scanf("%d", &user_choice);
+        printf("\n");
 
         if (user_choice >=1 && user_choice <=3)
             break;
     }
 
-    // take user_max from user
+    // 유저에게 user_max의 값을 할당받는다.
     while(1)
     {
         printf("\n");
@@ -32,7 +33,6 @@ void arithGame()
         if (user_max>0)
             break;
     }
-
 
     // get into real game
     switch(user_choice)
@@ -84,6 +84,7 @@ double game(int user_choice, int user_max)
             {
                 count++;
                 printf("오답입니다. 정답은 %d 입니다. 벌점 5점 추가 됩니다.\n",answer);
+                printf("\n");
             }
         }
         break;
@@ -146,7 +147,6 @@ double game(int user_choice, int user_max)
 static void score(double average_time)
 {   
     int current_score = 0; // score for this round
-
     if (average_time < 1)
 		current_score += 10;
 	else if (average_time < 2)
@@ -169,11 +169,8 @@ static void score(double average_time)
 		current_score += 1;
 	else
 		current_score += 0;
-
     //누적점수 
     entire_score += current_score;
-
 	printf("\n");
 	printf("문제당 평균 %.2lf 초의 시간이 소요되었으며, 이번 게임의 점수는 %d입니다.\n", average_time, current_score);
-
 }

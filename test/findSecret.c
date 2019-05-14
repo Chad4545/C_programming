@@ -10,7 +10,6 @@ void findSecret()
 {
     int start,end,timespent;
     int howlong = 0;
-    int current_score = 0;
     int tries = 0;
 
     // take max_number from user
