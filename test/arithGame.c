@@ -5,7 +5,7 @@ extern int entire_score;
 static int user_choice;
 static int user_max;
 double game(int,int);
-void score(double);
+static void score(double);
 
 
 void arithGame()
@@ -143,7 +143,7 @@ double game(int user_choice, int user_max)
 }
 
 
-void score(double average_time)
+static void score(double average_time)
 {   
     int current_score = 0; // score for this round
 

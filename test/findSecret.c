@@ -4,7 +4,7 @@ extern int entire_score;
 static int user_max;
 int find_number(int);
 int how_long(int);
-void score(int,int,int);
+static void score(int,int,int);
 
 void findSecret()
 {
@@ -70,7 +70,7 @@ int how_long(int n)
     return i;
 }
 
-void score(int tries, int howlong, int timespent)
+static void score(int tries, int howlong, int timespent)
 {   
     int current_score = 0;
     double after_howlong = 0;

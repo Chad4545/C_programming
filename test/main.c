@@ -15,23 +15,16 @@ int main(void){
         scanf("%d",&user_choice);
         printf("\n");
 
-        switch(user_choice)
-        {
-            case 1:
-                arithGame();
-                break;
-            case 2:
-                findSecret();
-                break;
-            case 3:
-                printf("지금까지의 점수는 %d입니다.\n",entire_score);
-                break;
-            case 4:
-                printf("게임을 종료합니다.\n");
-                break;
-            default:
-                break;
-        }
+        if (user_choice == 1)
+            arithGame();
+        else if(user_choice == 2)
+            findSecret();
+        else if(user_choice == 3)
+            printf("지금까지의 점수는 %d입니다.\n",entire_score);
+        else if(user_choice == 4)
+            printf("게임을 종료합니다.\n");
+        else    
+            break;
     }
     return 0;
 }
